@@ -1,1 +1,39 @@
-test
+Pages and functionality
+1. register
+MVP
+-name, email, pw
+
+2. login
+3. edit account
+MVP
+-edit name
+
+4. delete account
+MVP
+-delete button that deletes account currently logged in to
+
+5. find match
+MVP
+-display other users that the session user has not matched with
+-show Match button next to users to create a match. after matching the user should not show on the find match page anymore
+Backlog
+-create an accept/reject match flow
+
+6. my matches
+MVP
+-show users that have been matched, the life time record of wins-losses-ties, and a Play button that goes into the current game with that user
+Backlog
+-show match status (your turn, their turn, you won/lost/tied the last match start a new one)
+-nudge functionality if waiting on other user
+-average time to make move and other stats
+
+7. game
+MVP
+-make your move page if user has not played their hand yet with rock paper or scissor button
+-waiting on your opponent page showing the current users choice
+-you won/lost/tied the last match start a new one with Start new match button
+Backlog
+-how long have you been waiting and how long have the other user been waiting on you
+
+
+
