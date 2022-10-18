@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+        <!-- linking a css style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <!-- linking a javascript file
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+     linking an image
+    <img src="{{ url_for('static', filename='img/my_img.png') }}"> -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <h1 class="welcome">Register For The Best Game of Your Life</h1>
+        <div id="account_nav">
+            <a class="link" href="/login">Log In</a>
+        </div>
+    </div>
+
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+        {% if messages %}                            <!-- check if there are any messages -->
+            {% for message in messages %}            <!-- loop through the messages -->
+                <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <div id="vertical_form">
+        <form action="/user/create" method="POST">
+            <label for="name">Username:</label>
+            <br>
+            <input type="text" name="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" name="email">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="password">
+            <br>
+            <br>
+            <label for="password2">Confirm Password:</label>
+            <br>
+            <input type="password" name="password2">
+            <br>
+            <br>
+            <input class="button" type="submit" value="Register">
+        </form>
+    </div>
+
+
+</body>
+</html>

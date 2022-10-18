@@ -1,0 +1,166 @@
+@media only screen and (max-width: 500px) {
+  /* For phone: */
+  .mobile-table {}
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+* {
+    background-color: seashell;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 10px;
+}
+
+body {
+    margin: 0px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin: 0px;
+}
+
+.welcome {
+    background-color: black;
+    color: white;
+}
+
+#account_nav {
+    margin: 10px;
+    background-color: black;
+    display: flex;
+    gap: 10px;
+}
+
+.link {
+    padding: 10px;
+    background-color: deepskyblue;
+}
+
+.button {
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.table {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+td {
+    padding:10px 25px 10px 25px;
+    line-height: 50px;
+}
+
+#play_button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#vertical_form {
+    align-items: center;
+    display: flex;
+    margin: 10px 20px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 250px;
+}
+
+#edit_form {
+    align-items: center;
+    display: flex;
+    margin: 10px 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#show_box {
+    border: black;
+    border-width: medium;
+    border-style: solid;
+}
+
+#rps_form {
+    padding: 30px;
+}
+
+#rps_button {
+    border: black;
+    border-width: medium;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#body {
+    display: flex;
+    height: 100vh;
+}
+
+#body_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #444;
+    max-width: 150px;
+}
+
+#body_right {
+    flex: 3;
+}
+
+#matched {
+    padding: 30px;
+}
